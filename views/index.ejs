@@ -1,0 +1,13 @@
+<%- contentFor('body') %>
+<h3>Some 2 números</h3>
+<form method="POST" action="/soma">
+    <input name="a" type="text" />
+    <input name="b" type="text" />
+    <button type="submit">Enviar</button>
+</form>
+
+<p>
+    <%if (resultado) { %>
+        A soma de <%= a %> e <%= b %> é <strong> <%= resultado %></strong>!
+    <% } %>
+</p>
